@@ -1,0 +1,6 @@
+{
+  "name": "Hex Mirror",
+  "tagline": "",
+  "body": "## 为什么需要这个？\r\n\r\n因为 [Hex](https://hex.pm) 默认使用 Fastly 作为镜像，国内的网络时不时出现无法访问或者下载极慢的状态\r\n\r\n这里提供了一个镜像源，让国内环境下使用 Mix 的体验更友好\r\n\r\n***\r\n\r\n## 使用\r\n\r\n### 永久设置为使用此镜像\r\n\r\n* **Mix** `$ mix hex.config mirror_url https://repo.hex.pm`\r\n* **Rebar3** 添加 `{rebar_packages_cdn, \"https://repo.hex.pm\"}.` 到全局的或者项目层级的 `rebar.config` 文件里\r\n\r\n### 临时使用\r\n\r\n* **Mix** `$ HEX_MIRROR=https://repo.hex.pm mix deps.get`\r\n* **Rebar3** `$ HEX_CDN=https://repo.hex.pm rebar3 update`\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
